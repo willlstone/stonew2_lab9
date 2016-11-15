@@ -1,0 +1,83 @@
+body {
+	background-color: #E9967A;
+}
+
+h2 {
+	text-align: center;
+}
+
+.Grid {
+	display: block;
+	width: 100%;
+	}
+
+.GridHeading, .GridBody, .GridFoot, .GridRow{
+	clear: both;
+	}
+
+.GridHead, .GridFoot{
+	background-color: #DDD;
+	font-weight: bold;
+}
+
+.cell {
+	border: 1px solid #999999;
+	float: left;
+	height: 50px;
+	overflow: hidden;
+	padding: 3px 1.8%;
+	width: 12%;
+}
+
+.GridHead {
+	border: 1px solid #999999;
+	float: left;
+	height: 17px;
+	overflow: hidden;
+	padding: 3px 1.8%;
+	width: 12%;
+}
+.Grid:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#name {
+	 font-variant: small-caps;
+	 color: green;
+}
+
+#artist {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+#album {
+	 font-style: italic;
+}
+#date {
+	font-size: .75vw;
+}
+
+#genre {
+	font-size: .75vw;
+
+}
+
+ul {
+	list-style: none;
+}
+li:before {
+	content: "-";
+}
+
+#end {
+	font-size: 50%;
+	font-style: italic;
+	text-align: center;
+}
+

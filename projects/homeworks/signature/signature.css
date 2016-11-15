@@ -1,0 +1,36 @@
+body {
+        font-family: Arial, Helvetica, sans-serif; 
+        line-height: .5em;
+      }
+      h1 {
+       
+        margin: 0;
+        padding: 0;
+        font-variant: small-caps;
+        display: inline;
+      }
+      p {
+        /*display: inline;*/
+      }
+      h2 {
+
+      }
+      #picture {
+        float: left;
+        border: 0px;
+  
+      }
+      #content {
+        float: left;
+        margin-left: 10px;
+        border-left-style: solid;
+        border-left-color: red;
+        padding-left: 5px;
+      
+
+      }
+      #straight {
+        text-decoration: underline;
+      }
+
+

@@ -1,0 +1,19 @@
+ <VirtualHost websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys"
+    <Directory "/Users/Will1/Desktop/websys">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName websys
+</VirtualHost>
+
+<VirtualHost lab1.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab1"
+    <Directory "/Users/Will1/Desktop/websys/projects/labs/lab1">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab1.websys
+</VirtualHost>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Favoritesongs>
+
+<Song>
+    <name>White Iverson</name>
+    <artist>Post Malone</artist>
+    <album>Single</album>
+    <date>2016</date>
+    <genre>Hip Hop</genre>
+    <art><img width="100" height="100" src="whiteiverson.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Last Christmas</name>
+    <artist>Wham!</artist>
+    <album>Music from the Edge of Heaven</album>
+    <date>1984</date>
+    <genre>Christmas</genre>
+    <art><img width="100" height="100" src="lastchristmas.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Closer</name>
+    <artist>The Chainsmokers</artist>
+    <album>Bruno dans la radio</album>
+    <date>2016</date>
+    <genre>EDM</genre>
+    <art><img width="100" height="100" src="closer.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Chasing Cars</name>
+    <artist>Snow Patrol</artist>
+    <album>Eyes Open</album>
+    <date>2007</date>
+    <genre>Alternative</genre>
+    <art><img width="100" height="100" src="chasingcars.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Sweater Weather</name>
+    <artist>The Neighborhood</artist>
+    <album>I Love You</album>
+    <date>2013</date>
+    <genre>Indie</genre>
+    <art><img width="100" height="100" src="sweaterweather.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Drops of Jupiter</name>
+    <artist>Train</artist>
+    <album>Drops of Jupiter</album>
+    <date>2001</date>
+    <genre>Pop</genre>
+    <art><img width="100" height="100" src="dropsofjupiter.jpg"/></art>
+</Song>
+
+</Favoritesongs>

@@ -1,0 +1,41 @@
+Song:after {
+	content: "\a";
+	white-space: pre;
+}
+
+artist {
+	color: blue;
+}
+
+name {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 80%;
+}
+
+artist {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+album {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-style: italic;
+
+}
+
+date {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+genre {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+name.style {
+	height: 100px;
+	width: 100px;
+}

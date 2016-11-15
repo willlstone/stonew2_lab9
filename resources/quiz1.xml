@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Projects>
+
+<Item>
+    <Name>Lab1</Name>
+    <Description>Just an Index.php Page to demonstrate my apache works</Description>
+    <Link>/projects/labs/lab1</Link>
+</Item>
+
+<Item>
+    <Name>Lab2</Name>
+    <Description>Marking up a playlist of my favorite songs using HTML, XML, and CSS</Description>
+    <Link>/projects/labs/lab2</Link>
+</Item>
+
+<Item>
+    <Name>Lab3</Name>
+    <Description>Navigating the DOM and manipulating an HTML page using Javascript</Description>
+    <Link>/projects/labs/lab3</Link>
+</Item>
+
+<Item>
+    <Name>Lab4</Name>
+    <Description>JSON and AJAX</Description>
+    <Link>/projects/labs/lab4</Link>
+</Item>
+
+<Item>
+    <Name>Lab5</Name>
+    <Description>Front End Performance</Description>
+    <Link>/projects/labs/lab5</Link>
+</Item>
+<Item>
+    <Name>Lab6</Name>
+    <Description>PHP</Description>
+    <Link>/projects/labs/lab6</Link>
+</Item>
+
+<Item>
+    <Name>Homework1</Name>
+    <Description>A resume built using HTML and CSS</Description>
+    <Link>/projects/homeworks/hw1</Link>
+</Item>
+
+<Item>
+    <Name>Homework2</Name>
+    <Description>A microformat signature</Description>
+    <Link>/projects/homeworks/signature</Link>
+</Item>
+<Item>
+    <Name>Final</Name>
+    <Description>Final Project</Description>
+    <Link>/projects/Final</Link>
+</Item>
+
+<Item>
+    <Name>In Class Code</Name>
+    <Description>Nod and pretend you know what's happening</Description>
+    <Link>/projects/inclass</Link>
+</Item>
+
+
+
+</Projects>

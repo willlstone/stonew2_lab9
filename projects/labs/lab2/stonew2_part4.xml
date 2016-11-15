@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="stonew2_part4.css"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<Favoritesongs>
+<Song>
+    <name>Song Title</name>
+    <artist>Artist</artist>
+    <album>Album</album>
+    <date>Year</date>
+    <genre>Genre</genre>
+    <art></art>
+</Song>
+
+<Song>
+    <name>White Iverson</name>
+    <artist>Post Malone</artist>
+    <album><a href="http://www.allmusic.com/album/white-iverson-mw0002870925">Single</a></album>
+    <date>2016</date>
+    <genre>Hip Hop</genre>
+    <art><img width="50" height="50" src="whiteiverson.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Last Christmas</name>
+    <artist>Wham!</artist>
+    <album><a href="http://www.allmusic.com/album/last-christmas-mw0000404859">Music from the Edge of Heaven</a></album>
+    <date>1984</date>
+    <genre>Christmas</genre>
+    <art><img width="50" height="50" src="lastchristmas.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Closer</name>
+    <artist>The Chainsmokers</artist>
+    <album><a href="http://www.allmusic.com/album/closer-mw0002971877">Bruno dans la radio</a></album>
+    <date>2016</date>
+    <genre>EDM</genre>
+    <art><img width="50" height="50" src="closer.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Chasing Cars</name>
+    <artist>Snow Patrol</artist>
+    <album><a href="http://www.allmusic.com/album/eyes-open-mw0000722948">Eyes Open</a></album>
+    <date>2007</date>
+    <genre>Alternative</genre>
+    <art><img width="50" height="50" src="chasingcars.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Sweater Weather</name>
+    <artist>The Neighborhood</artist>
+    <album><a href="http://www.allmusic.com/album/i-love-you-mw0002505187">I Love You</a></album>
+    <date>2013</date>
+    <genre>Indie</genre>
+    <art><img width="50" height="50" src="sweaterweather.jpeg"/></art>
+</Song>
+
+<Song>
+    <name>Drops of Jupiter</name>
+    <artist>Train</artist>
+    <album><a href="http://www.allmusic.com/album/drops-of-jupiter-mw0000119619">Drops of Jupiter</a></album>
+    <date>2001</date>
+    <genre>Pop</genre>
+    <art><img width="50" height="50" src="dropsofjupiter.jpg"/></art>
+</Song>
+
+</Favoritesongs>
+</html>

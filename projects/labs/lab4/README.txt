@@ -1,0 +1,3 @@
+Will Stone Lab 4
+
+The biggest nightmare about this lab is the spacing of the different lines. I wasn't sure if I could use a grid or not (like in lab 2), so I didn't. My only real other concern is whether or not you want a .htaccess file or not, like for the Quiz. I'm not sure how you grade these or what you prefer in terms of giving you a copy of our vhosts.conf file or whatnot. I really wasn't sure so I didn't include any of that in this zip up of my websys folder.

@@ -1,0 +1,62 @@
+{"dank_tunes":[
+	{
+		"name":"White Iverson", 
+		"artist":"Post Malone", 
+		"album":"Single", 
+		"date":"2016", 
+		"genre":"Hip Hop", 
+		"art":"whiteiverson.jpeg", 
+		"link":"http://www.postmalone.com/"
+	},
+	
+	{
+		"name":"Last Christmas", 
+		"artist":"Wham!", 
+		"album":"Music from the Edge of Heaven", 
+		"date":"1984", 
+		"genre":"Christmas", 
+		"art":"lastchristmas.jpeg", 
+		"link":"http://www.allmusic.com/artist/wham!-mn0000246960"
+	},
+
+	{
+		"name":"Closer", 
+		"artist":"The Chainsmokers", 
+		"album":"Bruno dans la radio", 
+		"date":"2016", 
+		"genre":"EDM", 
+		"art":"closer.jpeg", 
+		"link":"http://closerwith.thechainsmokers.com/"
+	},
+
+	{
+		"name":"Chasing Cars", 
+		"artist":"Snow Patrol", 
+		"album":"Eyes Open", 
+		"date":"2007", 
+		"genre":"Alternative", 
+		"art":"chasingcars.jpeg", 
+		"link":"http://www.snowpatrol.com/"
+	},
+
+	{
+		"name":"Sweater Weather", 
+		"artist":"The Neighborhood", 
+		"album":"I Love You", 
+		"date":"2013", 
+		"genre":"Indie", 
+		"art":"sweaterweather.jpeg", 
+		"link":"http://thenbhd.com/tour"
+	},
+
+	{
+		"name":"Drops of Jupiter", 
+		"artist":"Train", 
+		"album":"Drops of Jupiter", 
+		"date":"2001", 
+		"genre":"Pop", 
+		"art":"dropsofjupiter.jpg", 
+		"link":"http://www.savemesanfrancisco.com/#home"
+	}
+
+]}

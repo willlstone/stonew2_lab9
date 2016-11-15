@@ -1,0 +1,125 @@
+Will Stone Lab 8
+
+-----------------------------------------------------
+
+Part 1: Creating the tables 
+
+CREATE TABLE IF NOT EXISTS `courses` (
+  `crn` int(11) NOT NULL,
+  `prefix` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
+  `number` smallint(4) NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`crn`)
+  )
+
+
+CREATE TABLE IF NOT EXISTS `students` (
+  `rin` int(9) NOT NULL,
+  `rcsID` char(7),
+  `first_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `last_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `alias` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` int(10),
+  PRIMARY KEY (`rin`)
+)
+
+------------------------------------------------------
+Part 2:
+
+1.)
+ALTER TABLE `students` CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER TABLE `students`
+ ADD `street` varchar(100),
+ ADD `city` varchar(100),
+ ADD `state` varchar(2),
+ ADD `zip` int(5) NOT NULL;
+
+2.)
+ALTER TABLE `courses` CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER TABLE `courses`
+ ADD `section` int(2) NOT NULL,
+ ADD `year` int(4) NOT NULL;
+
+3.)
+CREATE TABLE IF NOT EXISTS `grades` (
+`id` int(11) NOT NULL,
+  `crn` int(11) NOT NULL,
+  `rin` int(9) NOT NULL,
+  `grade` int(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`crn`) REFERENCES courses(`crn`),
+  FOREIGN KEY (`rin`) REFERENCES students(`rin`)
+  )
+
+ALTER TABLE `grades` CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+4.)
+INSERT INTO `courses` (`crn`, `prefix`, `number`, `title`, `section`, `year`) VALUES
+(12345, 'ITWS', 1100, 'Intro to ITWS', 1, 2015),
+(11111, 'ITWS', 1600, 'IT and Society', 2, 2016),
+(12321, 'MGMT', 1100, 'Introductin to Management', 2, 2016),
+(54231, 'ITWS', 2200, 'Web Systems Development', 1, 2016),
+(76473, 'CSCI', 1100, 'Computer Science I', 4, 2015),
+(10101, 'FOOD', 1100, 'AP Lunch', 4, 2014),
+(33289, 'FOOD', 1100, 'Snacking 101', 6, 2016),
+(78767, 'CSCI', 1200, 'Data Structures', 1, 2015),
+(78874, 'MATH', 1100, 'Calculus I', 5, 2015),
+(42069, 'MATH', 1000, 'Trigonometry', 1, 2013);
+
+5.)
+INSERT INTO `students` (`rin`, `rcsID`, `first_name`, `last_name`, `alias`, `phone`, `street`, `city`, `state`, `zip`) VALUES
+(661493510, 'stonew', 'Will', 'Stone', 'Keith', 3166485256, '15 Wadleigh Falls', 'Lee', 'NH', 03861),
+(661493511, 'slutz', 'Sean', 'Lutz', 'slutz', 6032416783, '10 Linden Walk', 'Newmarket', 'NH', 03861),
+(661493512, 'cbarth', 'Cameron', 'Barth', 'Cam', 6034342303, '10 Hobbs Road', 'Lee', 'NH', 03861),
+(661493513, 'arey', 'Amy', 'Reynolds', 'ARay', 3166485258, '1999 Burdette Ave', 'Troy', 'NY', 02180),
+(661493514, 'crisley', 'Christina', 'Risley', 'Chrissy T', 305737292, 'AGD', 'Troy', 'NY', 02180),
+(661493515, 'svoll', 'Shawn', 'Vollaro', 'Shawnathan', 7465364738, 'Somewhere Rd', 'New Jersey', 'NJ', 07097),
+(661493516, 'bnicho', 'Bethany', 'Nichols', 'Big Hair Bethany', 4567834238, '12 Fox Rd', 'Salem', 'NY', 02185),
+(661493517, 'tromo', 'Tony', 'Romo', 'To Ro', 1258579846, '1 Cowboys Rd', 'Dallas', 'TX', 73301),
+(661493518, 'eelli', 'Ezekiel', 'Elliott', 'Zeke', 7593864930, '1 Cowboys Rd', 'Dallas', 'TX', 73301),
+(661493519, 'gorilla', 'Haram', 'be', 'Bless', 911, 'Cincinati zoo', 'Cincinati', 'OH', 45201);
+
+6.)
+
+INSERT INTO `grades` (`id`, `crn`, `rin`, `grade`) VALUES
+(1, 12345, 661493510, 95),
+(2, 12345, 661493511, 98),
+(3, 12345, 661493512, 88),
+(4, 12345, 661493513, 45),
+(5, 12321, 661493514, 86),
+(6, 12321, 661493515, 66),
+(7, 12321, 661493516, 76),
+(8, 11111, 661493517, 88),
+(9, 11111, 661493518, 84),
+(10, 11111, 661493519, 68),
+(11, 54231, 661493510, 55),
+(12, 54231, 661493511, 87),
+(13, 54231, 661493512, 88),
+(14, 54231, 661493513, 90),
+(15, 54231, 661493514, 75),
+(16, 76473, 661493515, 66),
+(17, 76473, 661493516, 98),
+(18, 76473, 661493517, 95),
+(19, 76473, 661493518, 77),
+(20, 76473, 661493519, 69);
+
+7.)
+
+SELECT * FROM `students` ORDER BY `rin`, `last_name`, `first_name` ASC
+
+8.)
+
+SELECT students.rin, `first_name`, `last_name`
+FROM `students`
+INNER JOIN `grades`
+ON grades.grade>90 and grades.rin = students.rin;
+
+9.)
+
+SELECT avg(grades.grade)
+FROM `grades`
+WHERE grades.crn = 12321;
+
+10.)
+
+SELECT COUNT (*) FROM `students`

@@ -1,0 +1,63 @@
+
+#site {
+	display: inline;
+	list-style-type: none;
+}
+#name {
+	font-variant: small-caps;
+	display: inline;
+	color: red;
+}
+#name li {
+	padding-bottom: 95px;
+}
+#artist {
+	font-variant: small-caps;
+	display: inline;
+}
+#artist li {
+	padding-bottom: 105px;
+}
+#album {
+	font-variant: small-caps;
+	display: inline;
+}
+#album li {
+	padding-bottom: 105px;
+}
+#date {
+	font-variant: small-caps;
+	display: inline;
+}
+#date li {
+	padding-bottom: 114px;
+}
+#genres {
+	font-variant: small-caps;
+	display: inline-block;
+	list-style: none;
+}
+#genres li {
+	padding-bottom: 114px;
+}
+#art {
+	font-variant: small-caps;
+	display: inline;
+	float: left;
+}
+#art li {
+	padding-bottom: 3px;
+}
+.grid {
+	display: inline-block;
+	list-style: none;
+}
+.header {
+	font-variant: small-caps;
+	font-size: xx-large;
+}
+
+body {
+	border: 3px solid black;
+	background-color: #99ccff;
+}

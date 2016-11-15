@@ -1,0 +1,114 @@
+Options +Indexes
+Require All Granted
+
+
+<VirtualHost websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys"
+    <Directory "/Users/Will1/Desktop/websys">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName websys
+</VirtualHost>
+
+<VirtualHost lab1.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab1"
+    <Directory "/Users/Will1/Desktop/websys/projects/labs/lab1">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab1.websys
+</VirtualHost>
+
+<VirtualHost lab2.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab2"
+    <Directory "/Users/Will1/Desktop/websys/lab2">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab2.websys
+</VirtualHost>
+
+
+<VirtualHost lab3.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab3"
+    <Directory "/Users/Will1/Desktop/websys/lab3">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab3.websys
+</VirtualHost>
+
+<VirtualHost lab4.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab4"
+    <Directory "/Users/Will1/Desktop/websys/lab4">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab4.websys
+</VirtualHost>
+
+<VirtualHost lab5.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab5"
+    <Directory "/Users/Will1/Desktop/websys/lab5">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab5.websys
+</VirtualHost>
+
+<VirtualHost lab6.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab6"
+    <Directory "/Users/Will1/Desktop/websys/lab6">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab6.websys
+</VirtualHost>
+
+<VirtualHost lab7.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab7"
+    <Directory "/Users/Will1/Desktop/websys/lab7">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab7.websys
+</VirtualHost>
+
+<VirtualHost lab8.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab8"
+    <Directory "/Users/Will1/Desktop/websys/lab8">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab8.websys
+</VirtualHost>
+
+<VirtualHost lab9.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab9"
+    <Directory "/Users/Will1/Desktop/websys/lab9">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab9.websys
+</VirtualHost>
+
+<VirtualHost lab10.websys:80>
+    ServerAdmin stonew2@rpi.edu
+    DocumentRoot "/Users/Will1/Desktop/websys/projects/labs/lab10"
+    <Directory "/Users/Will1/Desktop/websys/lab10">
+        Options +Indexes
+        Require all granted
+    </Directory>
+    ServerName lab10.websys
+</VirtualHost>
