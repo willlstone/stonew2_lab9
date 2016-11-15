@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Quiz 1 - Websys</title>    
+
+
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "resources/quiz1.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Name</th><th>Description</th></tr>";
+  var x = xmlDoc.getElementsByTagName("Item");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" + '<a href="' + 
+    x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue +
+    '">' +
+    x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
+    '</a>' + "</td><td>" +
+    x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("ProjectTable").innerHTML = table;
+}
+</script>
+
+
+
+<body onload="loadDoc()">
+  <h1>Projects - Will Stone</h1>
+  <table id="ProjectTable"></table>
+
+</body>
+
+
+
+
+<style>
+
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+
+h1{
+  color: blue;
+}
+
+</style>
+
+
+
+
+</html>
